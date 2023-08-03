@@ -6,5 +6,5 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb|
     vb.name = "vagrant-shell-script-nginx"
   end
-  # config.vm.provision "shell", path:"nginx.sh"
+  config.vm.provision "shell", path:"nginx.sh"
 end
